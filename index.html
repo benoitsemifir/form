@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation de formulaire</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form action="#" method="POST">
+        <!-- Pseudo -->
+        <div>
+            <label for="">Pseudo</label>
+            <input type="text" id="pseudo" required>
+            <p id="alert_pseudo" class="hidden alert">Le Pseudo est requis</p>
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="">Email</label>
+            <input type="email" id="email" required>
+            <p id="alert_email" class="hidden alert">Le mail n'est pas valide</p>
+        </div>
+        <!-- MDP -->
+        <div>
+            <label for="">Mot de passe</label>
+            <input type="password" id="password" required>
+            <p id="alert_password" class="hidden alert">Le mot de passe est requis</p>
+        </div>
+        <!-- MDP Confirm -->
+        <div>
+            <label for="">Confirmer le mot de passe</label>
+            <input type="password" id="passwordConfirm" required>
+            <p id="alert_passwordConfirm" class="hidden alert">Les mots de passe ne correspondent pas</p>
+        </div>
+            <button type="submit" disabled>S'inscrire</button>
+    </form>
+    <script src="./assets/js/formVerif.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.hidden{
+    display: none;
+}
+
+.alert {
+    font-weight: bold;
+    color: red;
+}
+
+form div {
+    margin: 2em;
+}
